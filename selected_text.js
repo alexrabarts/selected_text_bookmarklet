@@ -14,7 +14,7 @@
  */
 
 (function () {
-  window.location = 'http://example.com?q=' + escape(selectedText());
+  open('http://example.com?q=' + escape(selectedText()));
 
   function selectedText() {
     var text = '';
@@ -27,6 +27,6 @@
       text = document.selection.createRange().text;
     }
 
-    return text;
+    return String(text);
   }
 })();

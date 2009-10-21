@@ -1,2 +1,1 @@
-javascript:(function(){window.location='http://example.com?q='+escape(selectedText());function selectedText(){var text='';if(window.getSelection){text=window.getSelection();}else if(document.getSelection){text=document.getSelection();}else if(document.selection){text=document.selection.createRange().text;}
-return text;}})();
+javascript:(function(){open('http://example.com?q='+escape(selectedText()));function%20selectedText(){var%20text='';if(window.getSelection){text=window.getSelection();}else%20if(document.getSelection){text=document.getSelection();}else%20if(document.selection){text=document.selection.createRange().text;}%20return%20String(text);}})();
